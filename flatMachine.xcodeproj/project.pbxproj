@@ -13,6 +13,7 @@
 		8D17CBB61E8AC39600224471 /* SlotItem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D17CBB51E8AC39600224471 /* SlotItem1.swift */; };
 		8D17CBB81E8ACF1500224471 /* SlotItem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D17CBB71E8ACF1500224471 /* SlotItem2.swift */; };
 		8D17CBBA1E8AD2A600224471 /* SlotItem3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D17CBB91E8AD2A600224471 /* SlotItem3.swift */; };
+		8D17CBBD1E8ADED800224471 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D17CBBC1E8ADED800224471 /* RoundedButton.swift */; };
 		8D555B541E89666200A7DA57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D555B531E89666200A7DA57 /* AppDelegate.swift */; };
 		8D555B561E89666200A7DA57 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8D555B551E89666200A7DA57 /* GameScene.sks */; };
 		8D555B581E89666200A7DA57 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8D555B571E89666200A7DA57 /* Actions.sks */; };
@@ -30,6 +31,7 @@
 		8D17CBB51E8AC39600224471 /* SlotItem1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotItem1.swift; sourceTree = "<group>"; };
 		8D17CBB71E8ACF1500224471 /* SlotItem2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotItem2.swift; sourceTree = "<group>"; };
 		8D17CBB91E8AD2A600224471 /* SlotItem3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotItem3.swift; sourceTree = "<group>"; };
+		8D17CBBC1E8ADED800224471 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		8D555B501E89666200A7DA57 /* flatMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flatMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D555B531E89666200A7DA57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D555B551E89666200A7DA57 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8D17CBBB1E8ADEB100224471 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D17CBBC1E8ADED800224471 /* RoundedButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		8D555B471E89666100A7DA57 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +108,7 @@
 		8D555B521E89666200A7DA57 /* flatMachine */ = {
 			isa = PBXGroup;
 			children = (
+				8D17CBBB1E8ADEB100224471 /* View */,
 				8D555B551E89666200A7DA57 /* GameScene.sks */,
 				8D555B591E89666200A7DA57 /* GameScene.swift */,
 				8D555B5B1E89666200A7DA57 /* GameViewController.swift */,
@@ -183,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D555B5A1E89666200A7DA57 /* GameScene.swift in Sources */,
+				8D17CBBD1E8ADED800224471 /* RoundedButton.swift in Sources */,
 				8D555B5C1E89666200A7DA57 /* GameViewController.swift in Sources */,
 				8D555B541E89666200A7DA57 /* AppDelegate.swift in Sources */,
 				8D17CBAE1E8AAA3E00224471 /* SlotMachine.swift in Sources */,
