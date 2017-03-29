@@ -14,6 +14,10 @@
 		8D17CBB81E8ACF1500224471 /* SlotItem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D17CBB71E8ACF1500224471 /* SlotItem2.swift */; };
 		8D17CBBA1E8AD2A600224471 /* SlotItem3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D17CBB91E8AD2A600224471 /* SlotItem3.swift */; };
 		8D17CBBD1E8ADED800224471 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D17CBBC1E8ADED800224471 /* RoundedButton.swift */; };
+		8D17CBC21E8B0C3D00224471 /* Diamond Dust.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D17CBC11E8B0C3D00224471 /* Diamond Dust.ttf */; };
+		8D17CBC41E8B0C6C00224471 /* ABOVE.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D17CBC31E8B0C6C00224471 /* ABOVE.ttf */; };
+		8D17CBC61E8B0C9E00224471 /* Pasajero.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8D17CBC51E8B0C9E00224471 /* Pasajero.otf */; };
+		8D17CBC81E8B0CB900224471 /* Birds of Paradise c PERSONAL USE ONLY.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D17CBC71E8B0CB900224471 /* Birds of Paradise c PERSONAL USE ONLY.ttf */; };
 		8D555B541E89666200A7DA57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D555B531E89666200A7DA57 /* AppDelegate.swift */; };
 		8D555B561E89666200A7DA57 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8D555B551E89666200A7DA57 /* GameScene.sks */; };
 		8D555B581E89666200A7DA57 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8D555B571E89666200A7DA57 /* Actions.sks */; };
@@ -22,6 +26,7 @@
 		8D555B5F1E89666200A7DA57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D555B5D1E89666200A7DA57 /* Main.storyboard */; };
 		8D555B611E89666200A7DA57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D555B601E89666200A7DA57 /* Assets.xcassets */; };
 		8D555B641E89666200A7DA57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D555B621E89666200A7DA57 /* LaunchScreen.storyboard */; };
+		8DAEB4721E8B37C50030538F /* CustomBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEB4711E8B37C50030538F /* CustomBorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,10 @@
 		8D17CBB71E8ACF1500224471 /* SlotItem2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotItem2.swift; sourceTree = "<group>"; };
 		8D17CBB91E8AD2A600224471 /* SlotItem3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotItem3.swift; sourceTree = "<group>"; };
 		8D17CBBC1E8ADED800224471 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		8D17CBC11E8B0C3D00224471 /* Diamond Dust.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Diamond Dust.ttf"; sourceTree = "<group>"; };
+		8D17CBC31E8B0C6C00224471 /* ABOVE.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ABOVE.ttf; sourceTree = "<group>"; };
+		8D17CBC51E8B0C9E00224471 /* Pasajero.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pasajero.otf; sourceTree = "<group>"; };
+		8D17CBC71E8B0CB900224471 /* Birds of Paradise c PERSONAL USE ONLY.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Birds of Paradise c PERSONAL USE ONLY.ttf"; sourceTree = "<group>"; };
 		8D555B501E89666200A7DA57 /* flatMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flatMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D555B531E89666200A7DA57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D555B551E89666200A7DA57 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -42,6 +51,7 @@
 		8D555B601E89666200A7DA57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D555B631E89666200A7DA57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D555B651E89666200A7DA57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DAEB4711E8B37C50030538F /* CustomBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +94,22 @@
 		8D17CBBB1E8ADEB100224471 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8D17CBC01E8B0C1F00224471 /* Fonts */,
 				8D17CBBC1E8ADED800224471 /* RoundedButton.swift */,
+				8DAEB4711E8B37C50030538F /* CustomBorder.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		8D17CBC01E8B0C1F00224471 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8D17CBC11E8B0C3D00224471 /* Diamond Dust.ttf */,
+				8D17CBC31E8B0C6C00224471 /* ABOVE.ttf */,
+				8D17CBC51E8B0C9E00224471 /* Pasajero.otf */,
+				8D17CBC71E8B0CB900224471 /* Birds of Paradise c PERSONAL USE ONLY.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		8D555B471E89666100A7DA57 = {
@@ -178,10 +201,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D17CBC61E8B0C9E00224471 /* Pasajero.otf in Resources */,
 				8D555B5F1E89666200A7DA57 /* Main.storyboard in Resources */,
+				8D17CBC81E8B0CB900224471 /* Birds of Paradise c PERSONAL USE ONLY.ttf in Resources */,
 				8D555B561E89666200A7DA57 /* GameScene.sks in Resources */,
+				8D17CBC21E8B0C3D00224471 /* Diamond Dust.ttf in Resources */,
 				8D555B611E89666200A7DA57 /* Assets.xcassets in Resources */,
 				8D555B641E89666200A7DA57 /* LaunchScreen.storyboard in Resources */,
+				8D17CBC41E8B0C6C00224471 /* ABOVE.ttf in Resources */,
 				8D555B581E89666200A7DA57 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +229,7 @@
 				8D17CBB01E8AAA5A00224471 /* GameObject.swift in Sources */,
 				8D17CBB81E8ACF1500224471 /* SlotItem2.swift in Sources */,
 				8D17CBB41E8AAB1F00224471 /* GameProtocol.swift in Sources */,
+				8DAEB4721E8B37C50030538F /* CustomBorder.swift in Sources */,
 				8D17CBB61E8AC39600224471 /* SlotItem1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

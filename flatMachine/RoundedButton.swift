@@ -36,7 +36,7 @@ extension UIButton {
         }
         
         set {
-            cornerRadius = newValue
+            cornerRadius = CGFloat(newValue)
         }
     }
     
