@@ -11,8 +11,6 @@ import SpriteKit
 import GameplayKit
 
 class GameViewController: UIViewController {
-
-    @IBOutlet weak var betLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +21,7 @@ class GameViewController: UIViewController {
             if let scene = GameScene(fileNamed: "GameScene") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
-                scene.BetLabel = self.betLabel
+                
                 
                 // Present the scene
                 view.presentScene(scene)

@@ -9,7 +9,7 @@
 import Foundation
 
 class GameVar: NSObject {
-    private var _balance = 1000
+    private var _balance = 999
     private var _wins = 0
     private var _jackpot = 5000
     private var _bet = 1

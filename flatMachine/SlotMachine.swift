@@ -12,15 +12,15 @@ class SlotMachine: SKSpriteNode {
     
     let ReelOne: SKSpriteNode = {
         let texture = SKTexture(image: #imageLiteral(resourceName: "cherry"))
-        let node = SKSpriteNode(texture: texture, color: .white, size: CGSize(width: 75, height: 75))
-        node.position = CGPoint(x: screenWidth * 0.65, y: screenHeight * 0.7)
+        let node = SKSpriteNode(texture: texture, color: .white, size: CGSize(width: 55, height: 60))
+        node.position = CGPoint(x: screenWidth * 0.67, y: screenHeight * 0.7)
         
         return node
     }()
     
     let ReelTwo: SKSpriteNode = {
         let texture = SKTexture(image: #imageLiteral(resourceName: "cherry"))
-        let node = SKSpriteNode(texture: texture, color: .white, size: CGSize(width: 75, height: 75))
+        let node = SKSpriteNode(texture: texture, color: .white, size: CGSize(width: 55, height: 60))
         node.position = CGPoint(x: screenWidth * 0.45, y: screenHeight * 0.7)
         
         return node
@@ -28,8 +28,8 @@ class SlotMachine: SKSpriteNode {
     
     let ReelThree: SKSpriteNode = {
         let texture = SKTexture(image: #imageLiteral(resourceName: "cherry"))
-        let node = SKSpriteNode(texture: texture, color: .white, size: CGSize(width: 75, height: 75))
-        node.position = CGPoint(x: screenWidth * 0.25, y: screenHeight * 0.7)
+        let node = SKSpriteNode(texture: texture, color: .white, size: CGSize(width: 55, height: 60))
+        node.position = CGPoint(x: screenWidth * 0.23, y: screenHeight * 0.7)
         
         return node
     }()
@@ -40,6 +40,40 @@ class SlotMachine: SKSpriteNode {
         button.position = CGPoint(x: screenWidth * 0.5, y: screenHeight * 0.1)
         return button
     }()
+    
+    let balanceLabel: SKLabelNode = {
+        let label = SKLabelNode()
+        label.text = "123456"
+        label.fontSize = 30
+        label.fontName = "Helvetica Neue Thin"
+        label.fontColor = SKColor(red: 208/255, green: 2/255, blue: 27/255, alpha: 1)
+        label.horizontalAlignmentMode = .right
+        label.position = CGPoint(x: screenWidth * 0.5, y: screenHeight * 0.35)
+        return label
+    }()
+    
+    let betLabel: SKLabelNode = {
+        let label = SKLabelNode()
+        label.text = "25"
+        label.fontSize = 30
+        label.fontName = "Helvetica Neue Thin"
+        label.fontColor = SKColor(red: 208/255, green: 2/255, blue: 27/255, alpha: 1)
+        label.horizontalAlignmentMode = .right
+        label.position = CGPoint(x: screenWidth * 0.2, y: screenHeight * 0.35)
+        return label
+    }()
+    
+    let winLabel: SKLabelNode = {
+        let label = SKLabelNode()
+        label.text = "200"
+        label.fontSize = 30
+        label.fontName = "Helvetica Neue Thin"
+        label.fontColor = SKColor(red: 208/255, green: 2/255, blue: 27/255, alpha: 1)
+        label.horizontalAlignmentMode = .right
+        label.position = CGPoint(x: screenWidth * 0.75, y: screenHeight * 0.35)
+        return label
+    }()
+
 
     
     init() {
@@ -53,6 +87,9 @@ class SlotMachine: SKSpriteNode {
         addChild(ReelTwo)
         addChild(ReelThree)
         addChild(spinButton)
+        addChild(winLabel)
+        addChild(betLabel)
+        addChild(balanceLabel)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -77,10 +114,10 @@ class SlotMachine: SKSpriteNode {
     
     func updatePlayerStates(){
         if let playerStates = playerStates{
-            //jackpotLabel.text = "\(playerStates.jackpot)"
-            //totalLabel.text = "\(playerStates.playerMoney)"
-            //betLabel.text = "\(playerStates.playerBet)"
-            //winLabel.text = "\(playerStates.winnings)"
+ 
+            balanceLabel.text = "\(playerStates.balance)"
+            betLabel.text = "\(playerStates.bet)"
+            winLabel.text = "\(playerStates.wins)"
         }
         
     }

@@ -16,8 +16,6 @@ var screenHeight = screenSize.height
 
 class GameScene: SKScene {
     
-    var BetLabel: UILabel?
-    
     
     var gameVar = GameVar()
     let slotMachine = SlotMachine()
@@ -194,9 +192,11 @@ class GameScene: SKScene {
             getBetLineValue(betLineValue: &betLine[spin], outComeValue: outcome[spin])
             
             //see real value
-            print(outcome[spin])
+            //print(outcome[spin])
             print(betLine[spin])
+            
         }
+        print("--------")
         
         getBetLineImage(betLine: betLine)
         //checkJackPot()
@@ -207,8 +207,7 @@ class GameScene: SKScene {
         slotMachine.ReelOne.texture = SKTexture(imageNamed: betLine[0].rawValue)
         slotMachine.ReelTwo.texture = SKTexture(imageNamed: betLine[1].rawValue)
         slotMachine.ReelThree.texture = SKTexture(imageNamed: betLine[2].rawValue)
-        //slotItem2Sprite.secondReel.texture = SKTexture(imageNamed: betLine[1].rawValue)
-        //slotItem3Sprite.thirdReel.texture = SKTexture(imageNamed: betLine[2].rawValue)
+
     }
     
     func getBetLineValue(betLineValue:inout itemsTally ,outComeValue: Int) {
