@@ -2,12 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "SlotMachine2.png",
+      "filename" : "spinBtn.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "SlotMachine3.png",
       "scale" : "2x"
     },
     {

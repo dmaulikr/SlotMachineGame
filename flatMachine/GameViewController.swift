@@ -12,17 +12,18 @@ import GameplayKit
 
 class GameViewController: UIViewController {
 
+    @IBOutlet weak var betLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Load 'GameScene.sks' as a GKScene. This provides gameplay related content
-        // including entities and graphs.
-        
         if let view = self.view as! SKView? {
+            
             // Load the SKScene from 'GameScene.sks'
             if let scene = GameScene(fileNamed: "GameScene") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
+                scene.BetLabel = self.betLabel
                 
                 // Present the scene
                 view.presentScene(scene)
