@@ -112,6 +112,8 @@ class GameScene: SKScene {
         }
     }
     
+    
+    
     func determineWinnings(){
         if blanks == 0
         {
@@ -256,13 +258,25 @@ class GameScene: SKScene {
             return 0
         }
     }
-
     
 
     func touchUp(atPoint pos : CGPoint) {
         if slotMachine.spinButton.contains(pos){
             reels()
             //print("spinButton Tapped")
+        } else if slotMachine.tenBetButton.contains(pos) {
+            makeBet(amount: 10)
+            print("bet 10")
+        } else if slotMachine.maxBetButton.contains(pos) {
+            betMax()
+            print("bet Max")
+        } else if slotMachine.resetButton.contains(pos) {
+            resetGameVars()
+            print("reset")
+        } else if slotMachine.exitButton.contains(pos) {
+            let exitScene = ExitScene(size: (self.view?.frame.size)!)
+            self.scene?.view?.presentScene(exitScene)
+            print("exit")
         }
         slotMachine.updatePlayerStates()
     }

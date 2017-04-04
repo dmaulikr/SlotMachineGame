@@ -20,22 +20,8 @@ class GameObject: SKSpriteNode, GameProtocol {
     var scale:CGFloat?
 
     
-    // Constructor 
-/*
-    init(imageString: String, initialScale: CGFloat) {
-        
-        // initialize the object with an image
-        let texture = SKTexture(imageNamed: imageString)
-        let color = UIColor.clear
-        super.init(texture: texture, color: color, size: texture.size())
-        self.scale = initialScale
-        self.setScale(scale!)
-        self.width = texture.size().width * self.scale!
-        self.height = texture.size().height * self.scale!
+    // Constructor
 
-        self.name = imageString
-        Start()
-    }*/
     
     init(textureImage: UIImage) {
         

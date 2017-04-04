@@ -12,7 +12,7 @@ class SlotMachine: SKSpriteNode {
     
     let ReelOne: SKSpriteNode = {
         let texture = SKTexture(image: #imageLiteral(resourceName: "cherry"))
-        let node = SKSpriteNode(texture: texture, color: .white, size: CGSize(width: 55, height: 60))
+        let node = SKSpriteNode(texture: texture, color: .white, size: CGSize(width: 60, height: 60))
         node.position = CGPoint(x: screenWidth * 0.67, y: screenHeight * 0.7)
         
         return node
@@ -20,7 +20,7 @@ class SlotMachine: SKSpriteNode {
     
     let ReelTwo: SKSpriteNode = {
         let texture = SKTexture(image: #imageLiteral(resourceName: "cherry"))
-        let node = SKSpriteNode(texture: texture, color: .white, size: CGSize(width: 55, height: 60))
+        let node = SKSpriteNode(texture: texture, color: .white, size: CGSize(width: 60, height: 60))
         node.position = CGPoint(x: screenWidth * 0.45, y: screenHeight * 0.7)
         
         return node
@@ -28,16 +28,44 @@ class SlotMachine: SKSpriteNode {
     
     let ReelThree: SKSpriteNode = {
         let texture = SKTexture(image: #imageLiteral(resourceName: "cherry"))
-        let node = SKSpriteNode(texture: texture, color: .white, size: CGSize(width: 55, height: 60))
+        let node = SKSpriteNode(texture: texture, color: .white, size: CGSize(width: 60, height: 60))
         node.position = CGPoint(x: screenWidth * 0.23, y: screenHeight * 0.7)
         
         return node
     }()
     
     let spinButton: SKSpriteNode = {
-        let button = SKSpriteNode(imageNamed: "spinBtn")
-        button.size = #imageLiteral(resourceName: "spinBtn").size
+        let button = SKSpriteNode(imageNamed: "SpinBtn")
+        button.size = #imageLiteral(resourceName: "SpinBtn").size
         button.position = CGPoint(x: screenWidth * 0.5, y: screenHeight * 0.1)
+        return button
+    }()
+    
+    let tenBetButton: SKSpriteNode = {
+        let button = SKSpriteNode(imageNamed: "10Bet")
+        button.size = #imageLiteral(resourceName: "10Bet").size
+        button.position = CGPoint(x: screenWidth * 0.3, y: screenHeight * 0.2)
+        return button
+    }()
+    
+    let maxBetButton: SKSpriteNode = {
+        let button = SKSpriteNode(imageNamed: "maxBet")
+        button.size = #imageLiteral(resourceName: "maxBet").size
+        button.position = CGPoint(x: screenWidth * 0.7, y: screenHeight * 0.2)
+        return button
+    }()
+    
+    let resetButton: SKSpriteNode = {
+        let button = SKSpriteNode(imageNamed: "reload")
+        button.size = #imageLiteral(resourceName: "reload").size
+        button.position = CGPoint(x: screenWidth * 0.1, y: screenHeight * 0.95)
+        return button
+    }()
+    
+    let exitButton: SKSpriteNode = {
+        let button = SKSpriteNode(imageNamed: "exit")
+        button.size = #imageLiteral(resourceName: "exit").size
+        button.position = CGPoint(x: screenWidth * 0.9, y: screenHeight * 0.95)
         return button
     }()
     
@@ -48,7 +76,7 @@ class SlotMachine: SKSpriteNode {
         label.fontName = "Helvetica Neue Thin"
         label.fontColor = SKColor(red: 208/255, green: 2/255, blue: 27/255, alpha: 1)
         label.horizontalAlignmentMode = .right
-        label.position = CGPoint(x: screenWidth * 0.5, y: screenHeight * 0.35)
+        label.position = CGPoint(x: screenWidth * 0.55, y: screenHeight * 0.3)
         return label
     }()
     
@@ -59,7 +87,7 @@ class SlotMachine: SKSpriteNode {
         label.fontName = "Helvetica Neue Thin"
         label.fontColor = SKColor(red: 208/255, green: 2/255, blue: 27/255, alpha: 1)
         label.horizontalAlignmentMode = .right
-        label.position = CGPoint(x: screenWidth * 0.2, y: screenHeight * 0.35)
+        label.position = CGPoint(x: screenWidth * 0.2, y: screenHeight * 0.3)
         return label
     }()
     
@@ -70,7 +98,7 @@ class SlotMachine: SKSpriteNode {
         label.fontName = "Helvetica Neue Thin"
         label.fontColor = SKColor(red: 208/255, green: 2/255, blue: 27/255, alpha: 1)
         label.horizontalAlignmentMode = .right
-        label.position = CGPoint(x: screenWidth * 0.75, y: screenHeight * 0.35)
+        label.position = CGPoint(x: screenWidth * 0.8, y: screenHeight * 0.3)
         return label
     }()
 
@@ -87,6 +115,10 @@ class SlotMachine: SKSpriteNode {
         addChild(ReelTwo)
         addChild(ReelThree)
         addChild(spinButton)
+        addChild(tenBetButton)
+        addChild(maxBetButton)
+        addChild(resetButton)
+        addChild(exitButton)
         addChild(winLabel)
         addChild(betLabel)
         addChild(balanceLabel)
@@ -100,9 +132,6 @@ class SlotMachine: SKSpriteNode {
     func Start() {
         
         self.anchorPoint = CGPoint(x: -0.05, y: -1.25)
-        
-        //self.position.x = screenWidth * 0.5
-        //self.position.y = screenHeight * 0.69
 
     }
     
