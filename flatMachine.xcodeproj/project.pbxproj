@@ -93,9 +93,9 @@
 			isa = PBXGroup;
 			children = (
 				8D555B5B1E89666200A7DA57 /* GameViewController.swift */,
-				8D17CBC01E8B0C1F00224471 /* Fonts */,
 				8D17CBBC1E8ADED800224471 /* RoundedButton.swift */,
 				8DAEB4711E8B37C50030538F /* CustomBorder.swift */,
+				8D17CBC01E8B0C1F00224471 /* Fonts */,
 			);
 			name = View;
 			sourceTree = "<group>";

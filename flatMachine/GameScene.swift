@@ -50,12 +50,9 @@ class GameScene: SKScene {
     
     
     override func didMove(to view: SKView) {
-        
         addChild(slotMachine)
         showPlayerStates()
         
-        
-        //TODO: Score Manager
 
     }
     
@@ -64,7 +61,6 @@ class GameScene: SKScene {
     }
     
     func resetGameVars(){
-        gameVar.jackpot = 50000
         gameVar.bet = 0
         gameVar.balance = 1000
         gameVar.wins = 0
@@ -82,9 +78,10 @@ class GameScene: SKScene {
     }
     
     func makeBet(amount: Int){
+        
+        //not enough money
         if gameVar.balance <= 0 {
             gameVar.bet = 0
-            print("not enough money")
             return
         }
         
@@ -173,8 +170,7 @@ class GameScene: SKScene {
             gameVar.balance -= gameVar.bet
             gameVar.wins = 0
             makeBet(amount: 0) // use to revalidate remaining credit
-            print("you lose")
-        }
+                    }
         
         resetTally()
         
@@ -182,7 +178,6 @@ class GameScene: SKScene {
     
     func reels(){
         if gameVar.bet == 0 {
-            print("can't spin when bet coin is 0")
             return
         }
         var betLine:[itemsTally] = [itemsTally.blank,itemsTally.blank,itemsTally.blank]
@@ -263,20 +258,21 @@ class GameScene: SKScene {
     func touchUp(atPoint pos : CGPoint) {
         if slotMachine.spinButton.contains(pos){
             reels()
-            //print("spinButton Tapped")
+
         } else if slotMachine.tenBetButton.contains(pos) {
             makeBet(amount: 10)
-            print("bet 10")
+            
+            
         } else if slotMachine.maxBetButton.contains(pos) {
             betMax()
-            print("bet Max")
+            
         } else if slotMachine.resetButton.contains(pos) {
             resetGameVars()
-            print("reset")
+            
         } else if slotMachine.exitButton.contains(pos) {
             let exitScene = ExitScene(size: (self.view?.frame.size)!)
             self.scene?.view?.presentScene(exitScene)
-            print("exit")
+            
         }
         slotMachine.updatePlayerStates()
     }

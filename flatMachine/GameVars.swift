@@ -9,9 +9,9 @@
 import Foundation
 
 class GameVar: NSObject {
-    private var _balance = 999
+    private var _balance = 1000
     private var _wins = 0
-    private var _jackpot = 5000
+    
     private var _bet = 1
     
     var balance:Int{
@@ -30,14 +30,7 @@ class GameVar: NSObject {
             _wins = newValue
         }
     }
-    var jackpot: Int{
-        get{
-            return _jackpot
-        }
-        set{
-            _jackpot = newValue
-        }
-    }
+
     var bet: Int{
         get{
             return _bet
