@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -26,18 +27,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cherry Slots" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKE-Rt-KML">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cherry Slots" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKE-Rt-KML">
                                 <rect key="frame" x="54" y="0.0" width="267" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="dks-eT-j3J"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Diamond-Dust" family="Diamond Dust" pointSize="45"/>
                                 <color key="textColor" red="0.81568627450980391" green="0.33725490196078434" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stats" translatesAutoresizingMaskIntoConstraints="NO" id="vwb-Eb-xvJ">
-                                <rect key="frame" x="42" y="365" width="287" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stats" translatesAutoresizingMaskIntoConstraints="NO" id="vwb-Eb-xvJ">
+                                <rect key="frame" x="44" y="326" width="287" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="N3z-2U-jfb"/>
+                                </constraints>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="hKE-Rt-KML" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="6IR-B7-ueT"/>
+                            <constraint firstItem="hKE-Rt-KML" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" id="FwH-u5-IDJ"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="vwb-Eb-xvJ" secondAttribute="bottom" constant="255" id="MJj-Ep-gMr"/>
+                            <constraint firstItem="vwb-Eb-xvJ" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="28" id="RzP-26-V5h"/>
+                            <constraint firstItem="hKE-Rt-KML" firstAttribute="centerX" secondItem="vwb-Eb-xvJ" secondAttribute="centerX" id="ZWs-J7-DkR"/>
+                            <constraint firstItem="hKE-Rt-KML" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="38" id="m1W-0B-Km4"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
