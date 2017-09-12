@@ -169,11 +169,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "Margarita Tereshchenkova - ID: 300923592";
+				ORGANIZATIONNAME = margot;
 				TargetAttributes = {
 					8D555B4F1E89666200A7DA57 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 2BULHRS882;
+						DevelopmentTeam = 4HN6T9DZP9;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -351,11 +351,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2BULHRS882;
+				DEVELOPMENT_TEAM = 4HN6T9DZP9;
 				INFOPLIST_FILE = flatMachine/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.centennial.margot.flatMachine;
+				PRODUCT_BUNDLE_IDENTIFIER = margot.flatMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -366,11 +366,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2BULHRS882;
+				DEVELOPMENT_TEAM = 4HN6T9DZP9;
 				INFOPLIST_FILE = flatMachine/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.centennial.margot.flatMachine;
+				PRODUCT_BUNDLE_IDENTIFIER = margot.flatMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
